@@ -12,7 +12,15 @@
             queue.Enqueue(80);
             queue.Enqueue(60);
             queue.Display();
+
+            Console.WriteLine("Dequeue");
+
+            queue.Dequeue();
+            queue.Dequeue();
+            queue.Dequeue();
+            queue.Display();
+
         }
+
     }
     }
-}
