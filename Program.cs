@@ -9,8 +9,8 @@
 
             QueueUsingLinkedList queue = new QueueUsingLinkedList();
             queue.Enqueue(50);
-            queue.Enqueue(70);
-            queue.Enqueue(30);
+            queue.Enqueue(80);
+            queue.Enqueue(60);
             queue.Display();
         }
     }
