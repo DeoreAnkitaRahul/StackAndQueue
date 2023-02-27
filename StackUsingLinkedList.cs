@@ -9,38 +9,20 @@ namespace StackAndQueue
 {
         public class StackUsingLinkedList
     {
-        public Node head = null;
-
-        public void Enqueue(int data)
+        private Node top;
+        public void Push(int value)
         {
-            Node node = new Node(data);
-
-            if (this.head == null)
-            {
-                this.head = node;
-            }
+            Node node = new Node(value);
+            if (this.top == null)
+                node.next = null;
             else
-            {
-                Node temp = head;
-                while (temp.next != null)
-                {
-                    temp = temp.next;
-                }
-                temp.next = node;
-
-
-            }
-            Console.WriteLine("{0} inserted into Queue", node.data);
+                node.next = this.top;
+            this.top = node;
+            Console.WriteLine("{0} pushed to stack ", value);
         }
-
         public void Display()
         {
-            Node temp = this.head;
-            if (temp == null)
-            {
-                Console.WriteLine("Queue is empty");
-                return;
-            }
+            Node temp = this.top;
             while (temp != null)
             {
                 Console.Write(temp.data + " ");

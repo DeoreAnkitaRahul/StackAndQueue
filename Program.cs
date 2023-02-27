@@ -5,21 +5,13 @@
         public static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Stack and Queue Program");
-            Console.WriteLine("Create queue using Linked List");
+            Console.WriteLine("Create Stack using Linked List");
 
-            QueueUsingLinkedList queue = new QueueUsingLinkedList();
-            queue.Enqueue(50);
-            queue.Enqueue(80);
-            queue.Enqueue(60);
-            queue.Display();
-
-            Console.WriteLine("Dequeue");
-
-            queue.Dequeue();
-            queue.Dequeue();
-            queue.Dequeue();
-            queue.Display();
-
+            StackUsingLinkedList stack = new StackUsingLinkedList();
+            stack.Push(70);
+            stack.Push(30);
+            stack.Push(56);
+            stack.Display();
         }
 
     }
